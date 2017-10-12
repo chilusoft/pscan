@@ -10,7 +10,7 @@ import time
 #clean up the mess on the screen, code differs with platform
 
 if platform == "linux" or platform == "linux2" or platform == "darwin":
-    # linux
+    # linux or MAC OS X, unix anyway !!
     subprocess.call("clear",shell=True)
 
 elif platform == "win32":
