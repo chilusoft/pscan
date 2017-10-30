@@ -41,6 +41,8 @@ try:
         result = sock.connect_ex((serverIP,port))
         if result == 0:
             print "Port {}:   Open".format(port)
+            
+        #closes the socket after a port regardless of the result of the loop 
         sock.close()
 
 except KeyboardInterrupt:
