@@ -14,7 +14,7 @@ if platform == "linux" or platform == "linux2" or platform == "darwin":
     subprocess.call("clear",shell=True)
 
 elif platform == "win32":
-    # Windows...
+    # Windows... running a hybrid monolithic kernel
     subprocess.call('cls',shell=True)
 
 
@@ -28,7 +28,7 @@ serverIP = socket.gethostbyname(serverUrl)
 #display some data
 
 print "*" * 40
-print "initiating port scanner engine"
+print "initiating port scanner engine ..."
 time.sleep(1)
 print "Please wait while scanning ", serverUrl, " at ", serverIP
 t1 = datetime.now()
